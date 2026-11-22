@@ -1,51 +1,34 @@
 @echo off
-title TruthLens AI - Push to GitHub
+title TruthLens AI - Push to Ayushgupta1715/truthlens-ai
 color 0b
 
 echo ========================================================
-echo         TruthLens AI - Automated GitHub Pusher
+echo         TruthLens AI - GitHub Auto-Pusher
 echo ========================================================
 echo.
-echo [1/3] Checking Git Status...
-git status -s
+echo Target Repository: https://github.com/Ayushgupta1715/truthlens-ai.git
 echo.
-echo [2/3] Setup GitHub Remote Repository
-echo.
-echo Please enter your GitHub Repository URL:
-echo (Example: https://github.com/your-username/truthlens-ai.git)
-echo.
-set /p REPO_URL="Enter GitHub Repo URL: "
-
-if "%REPO_URL%"=="" (
-    echo.
-    echo [ERROR] No URL entered. Please create a repository on GitHub first!
-    echo Visit: https://github.com/new
-    pause
-    exit /b
-)
-
-echo.
-echo Setting remote origin to: %REPO_URL%
+echo [1/2] Connecting remote origin...
 git remote remove origin 2>nul
-git remote add origin %REPO_URL%
+git remote add origin https://github.com/Ayushgupta1715/truthlens-ai.git
 git branch -M main
 
 echo.
-echo [3/3] Pushing all files to GitHub...
-echo (If a browser window or popup opens, please click 'Sign in with your browser')
+echo [2/2] Pushing code to GitHub...
+echo (A browser popup will open if you are not logged in - please click 'Authorize')
 echo.
 git push -u origin main
 
 if %ERRORLEVEL% EQU 0 (
     echo.
     echo ========================================================
-    echo   SUCCESS! TruthLens AI is now live on your GitHub!
+    echo   SUCCESS! TruthLens AI is now live on your GitHub:
+    echo   https://github.com/Ayushgupta1715/truthlens-ai
     echo ========================================================
 ) else (
     echo.
     echo ========================================================
-    echo   Push failed. Please make sure the repo exists and 
-    echo   you have permission to push to it.
+    echo   Push encountered an error. Please verify your login.
     echo ========================================================
 )
 
