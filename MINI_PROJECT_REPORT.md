@@ -18,7 +18,7 @@
 
 ### **by**
 
-### **AYUSH GUPTA**
+### **AYUSH KUMAR GUPTA**
 **Roll No.: 2308302009**  
 **Enrollment No.: B-0312**  
 **Semester / Year: 7th Semester / 4th Year**
@@ -56,7 +56,7 @@ I declare that this written submission represents my ideas in my own words and w
 _________________________________  
 **(Signature of the Student)**  
 
-**Name of the Student:** AYUSH GUPTA  
+**Name of the Student:** AYUSH KUMAR GUPTA  
 **Roll No.:** 2308302009  
 **Enrollment No.:** B-0312  
 **Branch:** B.Tech CSE (AI & DS) — 7th Semester / 4th Year  
@@ -69,7 +69,7 @@ _________________________________
 
 ## **CERTIFICATE**
 
-This is to certify that the Mini Project Report entitled **"TRUTHLENS AI: AI-POWERED FAKE NEWS & DEEPFAKE DETECTION PLATFORM"** submitted by **AYUSH GUPTA (Roll No. 2308302009, Enrollment No. B-0312)** in partial fulfilment of the requirements for the award of the degree of **Bachelor of Technology in Computer Science & Engineering (Artificial Intelligence & Data Science)** from **Khwaja Moinuddin Chishti Language University, Lucknow**, is an authentic record of the student's own work carried out under my supervision and guidance.
+This is to certify that the Mini Project Report entitled **"TRUTHLENS AI: AI-POWERED FAKE NEWS & DEEPFAKE DETECTION PLATFORM"** submitted by **AYUSH KUMAR GUPTA (Roll No. 2308302009, Enrollment No. B-0312)** in partial fulfilment of the requirements for the award of the degree of **Bachelor of Technology in Computer Science & Engineering (Artificial Intelligence & Data Science)** from **Khwaja Moinuddin Chishti Language University, Lucknow**, is an authentic record of the student's own work carried out under my supervision and guidance.
 
 To the best of my knowledge, the matter embodied in this report has not been submitted to any other University or Institute for the award of any degree or diploma.
 
@@ -98,7 +98,7 @@ Finally, I owe my deepest gratitude to my parents and family for their continuou
 
 <br><br>
 
-**AYUSH GUPTA**  
+**AYUSH KUMAR GUPTA**  
 Roll No.: 2308302009 (Enrollment No.: B-0312)  
 B.Tech — CSE (AI & DS), 7th Semester / 4th Year  
 Faculty of Engineering & Technology  

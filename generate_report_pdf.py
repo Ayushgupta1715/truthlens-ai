@@ -45,7 +45,7 @@ class NumberedCanvas(canvas.Canvas):
             self.drawRightString(523, 38, "TruthLens AI — Mini Project Report")
         self.restoreState()
 
-def build_pdf(filename="TRUTHLENS_AI_MINI_PROJECT_REPORT_AYUSH_GUPTA.pdf"):
+def build_pdf(filename="TRUTHLENS_AI_MINI_PROJECT_REPORT_AYUSH_KUMAR_GUPTA.pdf"):
     doc = SimpleDocTemplate(
         filename,
         pagesize=A4,
@@ -174,7 +174,7 @@ def build_pdf(filename="TRUTHLENS_AI_MINI_PROJECT_REPORT_AYUSH_GUPTA.pdf"):
     story.append(Spacer(1, 16))
     story.append(Paragraph("<b>Submitted by:</b>", style_cover_sub))
     story.append(Spacer(1, 4))
-    story.append(Paragraph("<b>AYUSH GUPTA</b>", style_cover_author))
+    story.append(Paragraph("<b>AYUSH KUMAR GUPTA</b>", style_cover_author))
     story.append(Paragraph("<b>Roll No.:</b> 2308302009 &nbsp;&nbsp;|&nbsp;&nbsp; <b>Enrollment No.:</b> B-0312", style_cover_sub))
     story.append(Paragraph("<b>Semester / Year:</b> 7th Semester / 4th Year", style_cover_sub))
 
@@ -216,7 +216,7 @@ def build_pdf(filename="TRUTHLENS_AI_MINI_PROJECT_REPORT_AYUSH_GUPTA.pdf"):
         ["_______________________________________", ""],
         ["(Signature of the Student)", ""],
         ["", ""],
-        ["Name of the Student:", "AYUSH GUPTA"],
+        ["Name of the Student:", "AYUSH KUMAR GUPTA"],
         ["Roll No.:", "2308302009"],
         ["Enrollment No.:", "B-0312"],
         ["Programme:", "B.Tech &mdash; CSE (AI & DS), 7th Sem / 4th Year"],
@@ -242,7 +242,7 @@ def build_pdf(filename="TRUTHLENS_AI_MINI_PROJECT_REPORT_AYUSH_GUPTA.pdf"):
     
     cert_text = (
         "This is to certify that the Mini Project Report entitled <b>&ldquo;TRUTHLENS AI: AI-POWERED FAKE NEWS & DEEPFAKE "
-        "DETECTION PLATFORM&rdquo;</b> submitted by <b>AYUSH GUPTA (Roll No. 2308302009, Enrollment No. B-0312)</b> in "
+        "DETECTION PLATFORM&rdquo;</b> submitted by <b>AYUSH KUMAR GUPTA (Roll No. 2308302009, Enrollment No. B-0312)</b> in "
         "partial fulfilment of the requirements for the award of the degree of <b>Bachelor of Technology in Computer Science & "
         "Engineering (Artificial Intelligence & Data Science)</b> from <b>Khwaja Moinuddin Chishti Language University, Lucknow</b>, "
         "is an authentic record of the student's own work carried out under my supervision and guidance.<br/><br/>"
@@ -303,7 +303,7 @@ def build_pdf(filename="TRUTHLENS_AI_MINI_PROJECT_REPORT_AYUSH_GUPTA.pdf"):
     story.append(Paragraph(ack_p4, style_body))
     story.append(Spacer(1, 25))
 
-    story.append(Paragraph("<b>AYUSH GUPTA</b><br/>Roll No.: 2308302009 (Enrollment No.: B-0312)<br/>B.Tech &mdash; CSE (AI & DS), 7th Semester / 4th Year<br/>Faculty of Engineering & Technology<br/>Khwaja Moinuddin Chishti Language University, Lucknow", ParagraphStyle('AckSign', fontName='Times-Roman', fontSize=11, leading=16, alignment=TA_RIGHT)))
+    story.append(Paragraph("<b>AYUSH KUMAR GUPTA</b><br/>Roll No.: 2308302009 (Enrollment No.: B-0312)<br/>B.Tech &mdash; CSE (AI & DS), 7th Semester / 4th Year<br/>Faculty of Engineering & Technology<br/>Khwaja Moinuddin Chishti Language University, Lucknow", ParagraphStyle('AckSign', fontName='Times-Roman', fontSize=11, leading=16, alignment=TA_RIGHT)))
 
     story.append(PageBreak())
 
