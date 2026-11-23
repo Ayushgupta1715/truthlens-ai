@@ -1,43 +1,53 @@
-# A MINI PROJECT REPORT
-ON
-
-## **TRUTHLENS AI: AI-POWERED FAKE NEWS & DEEPFAKE DETECTION PLATFORM**
-
-*Submitted in partial fulfilment of the requirements for the degree of*  
-**Bachelor of Technology**  
-*in*  
-**Computer Science and Engineering**
-
----
-
-### **Submitted By:**
-**AYUSH GUPTA**  
-**Roll No.:** ____________________  
-
-### **Under the Supervision of:**
-**[Supervisor Name]**  
-*Designation, Department of Computer Science & Engineering*  
-
----
+# GUIDELINES FOR PREPARATION OF MINI PROJECT REPORT
+## Specimen 'A': Title Sheet
 
 <br>
 
-```
-                  [ UNIVERSITY EMBLEM ]
-       KHWAJA MOINUDDIN CHISHTI LANGUAGE UNIVERSITY
-                 LUCKNOW, UTTAR PRADESH
-```
+<div align="center">
 
-### **DEPARTMENT OF COMPUTER SCIENCE AND ENGINEERING**  
-### **FACULTY OF ENGINEERING AND TECHNOLOGY**  
-### **KHWAJA MOINUDDIN CHISHTI LANGUAGE UNIVERSITY, LUCKNOW**  
-**ACADEMIC YEAR: 2026–2027**
+# **TRUTHLENS AI: AI-POWERED FAKE NEWS & DEEPFAKE DETECTION PLATFORM**
+
+<br>
+
+### *Submitted in partial fulfilment of the requirements for the degree of*
+## **Bachelor of Technology**
+### *in*
+## **Computer Science & Engineering (Artificial Intelligence & Data Science)**
+
+<br>
+
+### **by**
+
+### **AYUSH GUPTA**
+**Roll No.: 2308302009**  
+**Enrollment No.: B-0312**  
+**Semester / Year: 7th Semester / 4th Year**
+
+<br>
+
+### **Supervisor:**
+### **MR. DIGESH PANDEY**
+*Assistant Professor, Department of Computer Science & Engineering*  
+*Faculty of Engineering and Technology*
+
+<br><br>
+
+<img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/e0/Khwaja_Moinuddin_Chishti_Language_University_logo.png/220px-Khwaja_Moinuddin_Chishti_Language_University_logo.png" width="140" alt="KMCLU University Logo" />
+
+<br><br>
+
+### **DEPARTMENT OF COMPUTER SCIENCE AND ENGINEERING (AI & DS)**
+### **FACULTY OF ENGINEERING AND TECHNOLOGY**
+### **KHWAJA MOINUDDIN CHISHTI LANGUAGE UNIVERSITY, LUCKNOW**
+### **YEAR: 2026–2027**
+
+</div>
 
 ---
 
 <div style="page-break-after: always;"></div>
 
-## **SPECIMEN 'B': DECLARATION**
+## **Specimen 'B': Declaration**
 
 I declare that this written submission represents my ideas in my own words and where others' ideas or words have been included, I have adequately cited and referenced the original sources. I also declare that I have adhered to all principles of academic honesty and integrity and have not misrepresented or fabricated or falsified any idea/data/fact/source in my submission. I understand that any violation of the above will be cause for disciplinary action by the Institute and can also evoke penal action from the sources which have thus not been properly cited or from whom proper permission has not been taken when needed.
 
@@ -47,7 +57,9 @@ _________________________________
 **(Signature of the Student)**  
 
 **Name of the Student:** AYUSH GUPTA  
-**Roll No.:** ____________________  
+**Roll No.:** 2308302009  
+**Enrollment No.:** B-0312  
+**Branch:** B.Tech CSE (AI & DS) — 7th Semester / 4th Year  
 **Date:** 23rd November 2026  
 **Place:** Lucknow, Uttar Pradesh  
 
@@ -57,16 +69,17 @@ _________________________________
 
 ## **CERTIFICATE**
 
-This is to certify that the Mini Project Report entitled **"TRUTHLENS AI: AI-POWERED FAKE NEWS & DEEPFAKE DETECTION PLATFORM"** submitted by **AYUSH GUPTA (Roll No. ____________________)** in partial fulfilment of the requirements for the award of the degree of **Bachelor of Technology in Computer Science and Engineering** from **Khwaja Moinuddin Chishti Language University, Lucknow**, is an authentic record of the student's own work carried out under my supervision and guidance.
+This is to certify that the Mini Project Report entitled **"TRUTHLENS AI: AI-POWERED FAKE NEWS & DEEPFAKE DETECTION PLATFORM"** submitted by **AYUSH GUPTA (Roll No. 2308302009, Enrollment No. B-0312)** in partial fulfilment of the requirements for the award of the degree of **Bachelor of Technology in Computer Science & Engineering (Artificial Intelligence & Data Science)** from **Khwaja Moinuddin Chishti Language University, Lucknow**, is an authentic record of the student's own work carried out under my supervision and guidance.
 
 To the best of my knowledge, the matter embodied in this report has not been submitted to any other University or Institute for the award of any degree or diploma.
 
-<br><br><br>
+<br><br><br><br>
 
 _____________________________ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _____________________________  
-**[Supervisor Name]** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **Head of Department (CSE)**  
-*Project Supervisor* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *Department of CSE*  
-*Department of CSE, FET* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *Faculty of Engineering & Technology*  
+**MR. DIGESH PANDEY** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **DR. SUMAN KUMAR MISHRA**  
+*Project Supervisor / Guide* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *Head of Department (CSE)*  
+*Department of CSE (AI & DS)* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *Department of CSE*  
+*Faculty of Engineering & Technology* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *Faculty of Engineering & Technology*  
 *KMCLU, Lucknow* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *KMCLU, Lucknow*  
 
 ---
@@ -75,18 +88,19 @@ _____________________________ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n
 
 ## **ACKNOWLEDGEMENT**
 
-I take immense pleasure in expressing my deep sense of gratitude and respect to my project guide, **[Supervisor Name]**, Department of Computer Science and Engineering, Faculty of Engineering and Technology, Khwaja Moinuddin Chishti Language University, Lucknow, for continuous encouragement, inspiring guidance, and constructive critique throughout the course of this mini-project.
+I take immense pleasure in expressing my deep sense of gratitude and respect to my project supervisor, **Mr. Digesh Pandey**, Assistant Professor, Department of Computer Science and Engineering, Faculty of Engineering and Technology, Khwaja Moinuddin Chishti Language University, Lucknow, for his valuable guidance, technical suggestions, and constructive critique throughout the course of this mini-project.
 
-I express my heartfelt gratitude to the **Head of Department, Department of Computer Science and Engineering**, and the **Dean, Faculty of Engineering and Technology**, for providing the essential laboratory facilities, administrative assistance, and academic environment conducive to advanced computational research.
+I express my heartfelt gratitude to **Dr. Suman Kumar Mishra**, Head of Department, Department of Computer Science and Engineering, and the **Dean, Faculty of Engineering and Technology**, for providing the necessary computational infrastructure, laboratory facilities, and academic encouragement required to conduct this work.
 
-I also extend my sincere appreciation to all faculty members, technical staff, and fellow peers who directly or indirectly contributed their valuable suggestions and support during the design, implementation, and deployment phases of this project.
+I also extend my sincere appreciation to all faculty members, technical laboratory staff, and fellow classmates of the **CSE (AI & DS)** department who supported me during the development, testing, and deployment stages of the project.
 
-Finally, I owe my profound gratitude to my parents and family for their unwavering moral encouragement, patience, and blessings throughout my academic journey.
+Finally, I owe my deepest gratitude to my parents and family for their continuous moral support, understanding, and encouragement throughout my academic career.
 
-<br>
+<br><br>
 
 **AYUSH GUPTA**  
-B.Tech (Computer Science & Engineering)  
+Roll No.: 2308302009 (Enrollment No.: B-0312)  
+B.Tech — CSE (AI & DS), 7th Semester / 4th Year  
 Faculty of Engineering & Technology  
 Khwaja Moinuddin Chishti Language University, Lucknow  
 
@@ -94,13 +108,13 @@ Khwaja Moinuddin Chishti Language University, Lucknow
 
 <div style="page-break-after: always;"></div>
 
-## **ABSTRACT**
+## **ABSTRACT (200–300 Words)**
 
-The rapid proliferation of generative artificial intelligence and synthetic media generation tools—such as Generative Adversarial Networks (GANs), Diffusion models, and Large Language Models (LLMs)—has drastically lowered the barrier to creating hyper-realistic manipulated media. Misinformation, morphed imagery, face-swapped deepfakes, and synthetic video recordings pose unprecedented challenges to societal trust, journalistic credibility, digital security, and democratic governance. Traditional detection systems often operate in isolated silos, focusing exclusively on either text or imagery, and frequently lack interpretability, delivering opaque black-box verdicts without verifiable forensic reasoning.
+The rapid advancement of generative artificial intelligence and synthetic media frameworks—such as Generative Adversarial Networks (GANs), Latent Diffusion models, and Large Language Models (LLMs)—has facilitated the creation of highly convincing manipulated media. The proliferation of textual fake news, face-swapped portraits, and deepfake video recordings represents a severe threat to public trust, democratic processes, and cybersecurity. Conventional verification tools operate in isolation, typically addressing either text or visual media independently, while providing opaque classification scores without verifiable explainability.
 
-To address these critical limitations, this mini-project introduces **TruthLens AI**, a unified, multi-modal academic forensic platform engineered for real-time fake news detection, deepfake image forensics, deepfake video temporal consistency analysis, and automated AI fact verification. TruthLens AI employs an ensemble architectural pipeline: (i) Natural Language Processing (NLP) utilizing Term Frequency-Inverse Document Frequency (TF-IDF) feature vectors, clickbait syntactic indices, and punctuation intensity markers for textual news classification; (ii) Computer Vision forensics utilizing Error Level Analysis (ELA) and spatial high-frequency noise variance estimation to uncover synthetic facial synthesis and JPEG compression disparities; (iii) Temporal video keyframe decomposition tracking landmark boundary stability and inter-frame optical flow continuity over time; and (iv) Retrieval-Augmented Generation (RAG) knowledge retrieval cross-referencing claim entities against authenticated institutional databases (PIB Fact Check, WHO, Reuters, NASA) with stance classification.
+To resolve these challenges, this mini-project presents **TruthLens AI**, a unified, multi-modal academic forensic platform engineered for real-time fake news detection, deepfake image forensics, deepfake video temporal consistency analysis, and automated AI fact verification. TruthLens AI employs an ensemble forensic architecture: (i) Natural Language Processing (NLP) utilizing Term Frequency-Inverse Document Frequency (TF-IDF) feature vectors, clickbait syntactic indices, and punctuation intensity markers for textual news classification; (ii) Computer Vision forensics utilizing Error Level Analysis (ELA) and spatial high-frequency noise variance estimation to uncover synthetic facial synthesis and JPEG compression disparities; (iii) Temporal video keyframe decomposition tracking landmark boundary stability and inter-frame optical flow continuity over time; and (iv) Retrieval-Augmented Generation (RAG) knowledge retrieval cross-referencing claim entities against authenticated institutional databases (PIB Fact Check, WHO, Reuters, NASA) with stance classification.
 
-TruthLens AI is implemented using a scalable full-stack architecture comprising a high-performance Python FastAPI backend, SQLAlchemy ORM with SQLite/PostgreSQL, ReportLab cryptographic PDF report generation, and a responsive React (Vite) frontend with Tailwind CSS and glassmorphic telemetry dashboards. The platform incorporates an interactive AI forensic chatbot and full Explainable AI (XAI) diagnostic metrics. Comprehensive empirical evaluation demonstrates high classification fidelity, sub-second inference speeds, and verified production deployment on GitHub and Vercel.
+The system is implemented as a production-ready web application using Python FastAPI, SQLAlchemy ORM (SQLite/PostgreSQL), ReportLab PDF audit certificate generation, and a responsive React (Vite) frontend with Tailwind CSS and glassmorphic dashboards. An interactive AI forensic chatbot and full Explainable AI (XAI) diagnostic metrics are integrated. TruthLens AI has been empirically verified and successfully deployed live on GitHub and Vercel edge networks.
 
 **Keywords:** *Deepfake Detection, Fake News Classification, Error Level Analysis (ELA), Convolutional Neural Networks (CNN), Natural Language Processing (NLP), Explainable AI (XAI), Fact Verification.*
 
@@ -117,21 +131,20 @@ TruthLens AI is implemented using a scalable full-stack architecture comprising 
 | | **Certificate** | iii |
 | | **Acknowledgement** | iv |
 | | **Abstract** | v |
-| | **List of Figures and Tables** | vii |
 | **1** | **INTRODUCTION** | **1** |
-| | 1.1 Background and Context | 1 |
+| | 1.1 Background & Context | 1 |
 | | 1.2 Motivation | 2 |
-| | 1.3 Project Scope and Deliverables | 2 |
+| | 1.3 Project Scope & Deliverables | 2 |
 | | 1.4 Report Organization | 3 |
 | **2** | **LITERATURE REVIEW** | **4** |
-| | 2.1 Evolution of Synthetic Media and Deepfakes | 4 |
-| | 2.2 Textual Misinformation and NLP Techniques | 5 |
-| | 2.3 Visual Manipulation and Compression Forensics | 5 |
+| | 2.1 Evolution of Deepfake Media | 4 |
+| | 2.2 Textual Misinformation & NLP Methods | 5 |
+| | 2.3 Image Compression & Error Level Analysis (ELA) | 5 |
 | | 2.4 Research Gaps Identified | 6 |
 | **3** | **PROBLEM STATEMENT AND OBJECTIVES** | **7** |
 | | 3.1 Problem Statement | 7 |
 | | 3.2 Key Project Objectives | 7 |
-| | 3.3 Hardware and Software Requirements | 8 |
+| | 3.3 Hardware & Software Requirements | 8 |
 | **4** | **METHODOLOGY AND THEORETICAL FORMULATION** | **9** |
 | | 4.1 Module 1: Fake News Lexical Analysis (TF-IDF & NLP) | 9 |
 | | 4.2 Module 2: Deepfake Image Error Level Analysis (ELA) | 10 |
@@ -143,14 +156,14 @@ TruthLens AI is implemented using a scalable full-stack architecture comprising 
 | | 5.3 UML Use Case and Sequence Diagrams | 15 |
 | | 5.4 Database Schema Design | 16 |
 | **6** | **IMPLEMENTATION DETAILS** | **17** |
-| | 6.1 Backend Micro-services Architecture (FastAPI) | 17 |
-| | 6.2 Frontend Interface and User Experience (React + Vite) | 18 |
+| | 6.1 Backend Architecture (FastAPI & Python) | 17 |
+| | 6.2 Frontend Interface (React & Vite) | 18 |
 | | 6.3 Security, Authentication, and RBAC | 19 |
 | | 6.4 PDF Audit Certificate Generation Engine | 19 |
 | **7** | **RESULTS AND DISCUSSION** | **20** |
-| | 7.1 Experimental Evaluation and Metrics | 20 |
-| | 7.2 Confusion Matrix and Telemetry Analysis | 21 |
-| | 7.3 Explainability and Diagnostic Case Studies | 22 |
+| | 7.1 Empirical Model Performance | 20 |
+| | 7.2 Confusion Matrix and Performance Analysis | 21 |
+| | 7.3 Explainable AI (XAI) Case Studies | 22 |
 | | 7.4 Live Deployment Verification (GitHub & Vercel) | 23 |
 | **8** | **CONCLUSION AND FUTURE SCOPE** | **24** |
 | | 8.1 Summary of Contributions | 24 |
@@ -160,7 +173,7 @@ TruthLens AI is implemented using a scalable full-stack architecture comprising 
 | **10** | **APPENDIX** | **28** |
 | | Appendix A: Core Algorithms Source Code | 28 |
 | | Appendix B: Project User Interface Screenshots | 30 |
-| | Appendix C: Live Deployment Credentials | 31 |
+| | Appendix C: Live Deployment & Verification Links | 31 |
 
 ---
 
@@ -168,27 +181,27 @@ TruthLens AI is implemented using a scalable full-stack architecture comprising 
 
 ## **CHAPTER 1: INTRODUCTION**
 
-### 1.1 Background and Context
-The 21st century information ecosystem is dominated by high-velocity digital media consumption across decentralized social networks, micro-blogging platforms, and instant messaging services. While this transformation has democratized information dissemination, it has simultaneously cultivated a fertile environment for malicious computational propaganda. The emergence of sophisticated machine learning paradigms—specifically Generative Adversarial Networks (Goodfellow et al., 2014) and latent diffusion models (Rombach et al., 2022)—has enabled the automated synthesis of high-fidelity synthetic media, colloquially termed "Deepfakes."
+### 1.1 Background & Context
+The rapid evolution of generative deep learning models has transformed the digital media landscape. Technologies such as Generative Adversarial Networks (GANs), Variational Autoencoders (VAEs), and Diffusion architectures have democratized the ability to synthesize hyper-realistic human faces, modify audio-visual speech, and generate convincing textual fabrications. In contemporary society, social media platforms and instant messaging networks act as high-speed catalysts for the distribution of unverified information.
 
-Deepfakes encompass synthetic facial replacements, lip-sync reenactments, automated voice cloning, and AI-generated text generation. Simultaneously, textual fake news articles engineered with sensationalist clickbait headlines deceive automated filtering algorithms and human cognitive faculties alike. Consequently, digital media consumers are confronted with a cognitive crisis encapsulated by the project's guiding maxim: *"Don't Trust Everything You See. Verify Before You Believe."*
+Deepfakes represent sophisticated synthetic media wherein an individual's likeness, facial features, or vocal timbre are algorithmically altered. Concurrently, textual fake news articles leverage sensationalism and clickbait linguistics to maximize virality. The confluence of these technologies creates significant societal risks, ranging from political disinformation to identity fraud. TruthLens AI addresses this vulnerability under the foundational project philosophy: *"Don't Trust Everything You See. Verify Before You Believe."*
 
 ### 1.2 Motivation
-Existing commercial and academic detection mechanisms suffer from three critical bottlenecks:
-1. **Unimodal Fragmentation:** Most detection platforms specialize in only one modality—either text analysis or facial photo inspection—forcing investigative journalists, academic researchers, and digital citizens to toggle between fragmented tools.
-2. **Opaque Black-Box Classifications:** Deep neural networks frequently output a single probability score (e.g., "78% Fake") without providing explainable evidence, undermining evidentiary acceptability in legal, educational, and journalistic environments.
-3. **Absence of Unified Evidence Corroboration:** When dealing with viral public rumors (e.g., fraudulent welfare schemes or pandemic health hoaxes), pixel analysis alone is insufficient; verifiable cross-referencing against authentic governmental repositories is indispensable.
+Existing verification platforms exhibit key academic and functional shortcomings:
+1. **Unimodal Fragmentation:** Most commercial tools inspect only text or only images. When analyzing a multi-modal event (e.g., a viral post containing a sensational headline, a face-swapped photo, and an unverified claim), users are forced to navigate disparate, incompatible utilities.
+2. **Lack of Interpretability (Black-Box Problem):** Many commercial models output a solitary prediction percentage without transparent scientific rationale. In legal, forensic, and journalistic disciplines, unexplainable predictions lack probative value.
+3. **Absence of Institutional Cross-Referencing:** Image and text models alone cannot ascertain the real-world factual validity of policy announcements. An automated mechanism to query verified institutional knowledge bases is required.
 
-These challenges motivated the design of **TruthLens AI**—an integrated, academic-grade verification platform consolidating text, image, video, and fact verification within a single explainable ecosystem.
+These challenges motivated the development of **TruthLens AI** as a comprehensive B.Tech Mini Project in the Department of Computer Science & Engineering (Artificial Intelligence & Data Science) at Khwaja Moinuddin Chishti Language University.
 
-### 1.3 Project Scope and Deliverables
-The project deliverables developed within the 6–8 week academic mini-project timeline include:
-* **Module 1 (Fake News Detector):** NLP engine evaluating lexical TF-IDF vectors, clickbait indices, and punctuation intensity.
-* **Module 2 (Deepfake Image Forensics):** Computer vision pipeline executing Error Level Analysis (ELA) and spatial high-frequency noise variance estimation.
-* **Module 3 (Deepfake Video Forensics):** OpenCV keyframe sequence decomposition tracking temporal facial mesh stability and inter-frame continuity.
-* **Module 4 (AI Fact Verification):** Semantic knowledge retrieval cross-referencing claims against authenticated institutional databases (PIB, WHO, Reuters, NASA).
-* **Module 5 (Interactive AI Forensic Chatbot):** Conversational agent providing real-time in-chat claim triage and scientific forensic explanations.
-* **Automated Audit Certificates:** On-demand generation of publication-ready cryptographic PDF forensic certificates.
+### 1.3 Project Scope & Deliverables
+The project deliverables completed within the curriculum timeline include:
+* **Module 1 (Fake News Detection):** NLP analysis using TF-IDF vectorization, clickbait phrase quantification, and punctuation intensity metrics.
+* **Module 2 (Deepfake Image Forensics):** Spatial computer vision pipeline employing Error Level Analysis (ELA) and Gaussian high-frequency noise variance estimation.
+* **Module 3 (Deepfake Video Forensics):** OpenCV keyframe sequence analysis evaluating facial boundary continuity and inter-frame illumination stability.
+* **Module 4 (AI Fact Verification):** Entity extraction and semantic stance classification against verified institutional repositories (PIB Fact Check, WHO, Reuters, NASA).
+* **Module 5 (Forensic AI Chatbot):** Interactive conversational assistant for real-time claim triage and technical explanations.
+* **Cryptographic PDF Report Generator:** Automatic generation of formal audit certificates containing scan identifiers and model telemetry.
 * **Production Deployment:** Full cloud deployment on GitHub version control and Vercel edge networks.
 
 ---
@@ -197,29 +210,28 @@ The project deliverables developed within the 6–8 week academic mini-project t
 
 ## **CHAPTER 2: LITERATURE REVIEW**
 
-### 2.1 Evolution of Synthetic Media and Deepfakes
-Early synthetic media manipulation relied primarily on manual photo editing tools like Adobe Photoshop, which introduced visible spatial splicing boundaries and geometric incongruities. The introduction of Generative Adversarial Networks (GANs) marked a paradigm shift. StyleGAN (Karras et al., 2019) demonstrated that deep neural networks could generate photorealistic, high-resolution human portraits indistinguishable from authentic photographs to the naked human eye.
+### 2.1 Evolution of Deepfake Media
+Digital image manipulation dates back to conventional photo-compositing tools such as Adobe Photoshop. However, modern synthetic media synthesis is fundamentally distinguished by deep neural networks. Goodfellow et al. (2014) introduced Generative Adversarial Networks (GANs), establishing a game-theoretic framework between a Generator and a Discriminator. Karras et al. (2019) advanced this with StyleGAN, demonstrating the generation of photorealistic human faces with high fidelity.
 
-In the video domain, frameworks such as DeepFaceLab (Perov et al., 2020) and FaceForensics++ (Rössler et al., 2019) automated facial replacement and expression transfer. However, researchers noted that synthesis pipelines frequently leave subtle mathematical footprints:
-* Artifacts in the frequency domain;
-* Compression disparities along blended facial perimeters;
-* Involuntary biometric anomalies such as irregular eye-blinking dynamics and unnatural inter-frame illumination fluctuations.
+In video synthesis, architectures like DeepFaceLab (Perov et al., 2020) and FaceForensics++ (Rössler et al., 2019) streamlined face swapping. Nevertheless, forensic research demonstrates that generative synthesis leaves detectable mathematical artifacts:
+* Irregular frequency distributions in high-frequency spatial bands;
+* Localized JPEG compression inconsistencies along blending boundaries;
+* Incoherent temporal transitions between sequential video frames.
 
-### 2.2 Textual Misinformation and NLP Techniques
-Textual fake news detection has evolved from simple rule-based keyword matching to advanced semantic vector modeling. Shu et al. (2017) categorized fake news into malicious fabrications, sensational clickbait, and partisan bias. Early models utilized Term Frequency-Inverse Document Frequency (TF-IDF) alongside classifiers such as Logistic Regression, Naive Bayes, and Support Vector Machines (SVM).
+### 2.2 Textual Misinformation & NLP Methods
+Textual fake news detection has transitioned from rudimentary keyword blacklisting to semantic linguistic modeling. Shu et al. (2017) highlighted that deceptive text exhibits distinct stylistic signatures: high sensationalism, hyperbolic adjectives, and urgent calls to action. Term Frequency-Inverse Document Frequency (TF-IDF) combined with classical machine learning classifiers (Logistic Regression, Support Vector Machines) provides high precision while maintaining sub-second inference speeds.
 
-Recent advancements have demonstrated that stylistic features—including capital letter frequency, emotional punctuation density (e.g., excessive exclamation marks), and sensationalist trigger lexicons—serve as high-confidence orthogonal indicators alongside dense neural embeddings.
-
-### 2.3 Visual Manipulation and Compression Forensics
-Digital images stored in standard formats (such as JPEG) undergo lossy discrete cosine transform (DCT) compression. When an image is manipulated, spliced, or locally edited, the modified region experiences a different compression cycle compared to the rest of the unmodified sensor capture. Krawetz (2007) pioneered **Error Level Analysis (ELA)**, a technique that intentionally resaves an image at a known quality level (e.g., 90%) and computes the absolute pixel difference against the original. Unmodified areas converge to a stable, uniform error floor, whereas manipulated regions exhibit sharp, high-contrast residual spikes.
+### 2.3 Image Compression & Error Level Analysis (ELA)
+Digital images in lossy formats (JPEG) undergo Discrete Cosine Transform (DCT) block quantization. Neal Krawetz (2007) introduced Error Level Analysis (ELA), observing that when an image is modified or spliced, the altered region exhibits a different compression error profile compared to the original sensor capture. By resaving an image at a calibrated 90% quality and computing absolute pixel differences, modified regions manifest as prominent high-contrast clusters against a uniform baseline.
 
 ### 2.4 Research Gaps Identified
-| Dimension | Existing Systems | TruthLens AI Solution |
+| Evaluation Criteria | Conventional Tools | TruthLens AI Platform |
 | :--- | :--- | :--- |
-| **Modalities** | Fragmented (Text only OR Image only) | 4-in-1 Unified Multi-Modal Suite |
-| **Explainability** | Opaque probability percentage | Heatmaps, ELA metrics, Token Weights, Stance |
-| **Fact Checking** | Manual web search | Automated institutional RAG matching |
-| **Reporting** | Ephemeral browser screen | Downloadable cryptographic PDF audit certificates |
+| **Supported Modalities** | Unimodal (Text only OR Image only) | 4-in-1 Unified Multi-Modal Suite |
+| **Explainability (XAI)** | Single opaque probability | ELA heatmaps, landmark variance, stance citations |
+| **Fact Checking** | Manual human search | Automated institutional RAG matching |
+| **Formal Documentation**| Ephemeral browser view | Downloadable cryptographic PDF audit certificate |
+| **Deployment** | Local command line only | Production Vercel cloud deployment |
 
 ---
 
@@ -228,32 +240,32 @@ Digital images stored in standard formats (such as JPEG) undergo lossy discrete 
 ## **CHAPTER 3: PROBLEM STATEMENT AND OBJECTIVES**
 
 ### 3.1 Problem Statement
-*"To design, engineer, and deploy an explainable, multi-modal artificial intelligence platform capable of identifying manipulated textual news, detecting synthetic face artifacts in digital images, isolating temporal inconsistencies in deepfake video streams, and corroborating factual claims against authenticated public repositories within sub-second inference latencies."*
+*"To design, develop, and deploy an explainable, multi-modal artificial intelligence forensic platform capable of detecting manipulated textual news, identifying synthetic facial manipulation in images, analyzing temporal inconsistencies in video streams, and verifying factual claims against authenticated public repositories within sub-second response times."*
 
 ### 3.2 Key Project Objectives
-1. **Develop an NLP-based News Classifier** capable of evaluating linguistic sensationalism, clickbait markers, and source attribution certainty.
-2. **Implement an Image Forensics Engine** utilizing Error Level Analysis (ELA) and spatial high-frequency noise variance to detect synthetic face generation and splicing boundaries.
-3. **Construct a Video Temporal Analysis Pipeline** using OpenCV keyframe decomposition (1.5-second stride) to monitor facial boundary stability and landmark motion coherence.
-4. **Build a Semantic Fact Verification Service** that extracts claim entities and classifies institutional stance into *Verified Authentic*, *Debunked / False*, or *Unverified*.
-5. **Architect a Modern Full-Stack System** featuring a FastAPI backend, React (Vite) frontend, JWT-based Role-Based Access Control, and dynamic PDF audit report generation.
-6. **Ensure Zero Fabricated Metrics** and provide full Explainable AI telemetry for students, researchers, and academic evaluation.
+1. **Design an NLP Text Classifier** to compute lexical TF-IDF vectors, clickbait indices, and punctuation intensity to detect fabricated news articles.
+2. **Implement an Image Forensics Engine** utilizing Error Level Analysis (ELA) and spatial high-frequency noise variance to identify face swaps and diffusion smoothing.
+3. **Construct a Video Keyframe Analysis Engine** using OpenCV (1.5s stride) to track facial boundary continuity and inter-frame motion stability.
+4. **Build a Semantic Fact Verification Service** to cross-reference claims against authoritative institutional records (PIB, WHO, Reuters, NASA) with stance classification.
+5. **Architect a Scalable Full-Stack System** integrating a Python FastAPI backend, SQLite/PostgreSQL database, and a React (Vite) frontend with Tailwind CSS.
+6. **Integrate an Explainable AI (XAI) Suite** delivering telemetry metrics, dynamic confidence scorecards, and verifiable PDF audit certificates.
 
-### 3.3 Hardware and Software Requirements
+### 3.3 Hardware & Software Requirements
 
 #### Hardware Requirements:
 * **Processor:** Intel Core i5 / AMD Ryzen 5 or higher
-* **RAM:** Minimum 8 GB (16 GB recommended for video analysis)
-* **Storage:** 512 GB SSD (minimum 5 GB free space for dataset and keyframe cache)
-* **Architecture:** 64-bit OS
+* **Memory (RAM):** Minimum 8 GB (16 GB recommended)
+* **Storage:** 512 GB SSD (minimum 5 GB free disk space)
+* **System Architecture:** 64-bit OS
 
 #### Software Requirements:
 * **Operating System:** Windows 10/11, Ubuntu 20.04+, or macOS
 * **Backend Runtime:** Python 3.10+
 * **Backend Framework:** FastAPI, Uvicorn, Pydantic v2
-* **Data & ML Libraries:** Scikit-learn, NumPy, Pillow (PIL), OpenCV-Python
+* **Data Science & ML:** Scikit-learn, NumPy, Pillow (PIL), OpenCV-Python
 * **Frontend Runtime:** Node.js (v18+) & npm
 * **Frontend Framework:** React 18, Vite 5, Tailwind CSS, Lucide Icons
-* **Database:** SQLite (portable local) / PostgreSQL (production scalable)
+* **Database:** SQLite (local development) / PostgreSQL (production)
 * **Report Generation:** ReportLab 4.x
 * **Version Control & Hosting:** Git, GitHub, Vercel Edge Network
 
@@ -293,42 +305,42 @@ Digital images stored in standard formats (such as JPEG) undergo lossy discrete 
 ```
 
 ### 4.1 Module 1: Fake News Lexical Analysis (TF-IDF & NLP)
-The textual analysis micro-engine combines frequency-based vector modeling with rule-calibrated stylistic metrics:
+Text classification combines frequency vectorization with stylistic heuristic indices:
 $$\text{TF-IDF}(t, d, D) = \text{TF}(t, d) \times \text{IDF}(t, D)$$
 $$\text{IDF}(t, D) = \log\left(\frac{1 + |D|}{1 + |\{d \in D : t \in d\}|}\right) + 1$$
 
-In addition to vocabulary frequency, TruthLens AI computes:
-* **Clickbait Lexical Ratio ($C_r$):** The density of sensational urgency terms (e.g., *"shocking"*, *"miracle"*, *"secret"*, *"banned"*).
-* **Punctuation Intensity Index ($P_i$):** Frequency of all-caps tokens and clustered exclamation marks:
+In addition to vocabulary weights, TruthLens AI computes:
+* **Clickbait Ratio ($C_r$):** Density of sensationalist keywords (e.g., *"shocking"*, *"miracle"*, *"banned"*, *"secret"*).
+* **Punctuation Intensity Index ($P_i$):** Ratio of capitalized tokens and clustered exclamation marks:
   $$P_i = \frac{N_{\text{exclam}} + N_{\text{question}}}{N_{\text{total\_words}}}$$
 
 ### 4.2 Module 2: Deepfake Image Error Level Analysis (ELA)
-Error Level Analysis measures pixel difference after deliberate lossy re-compression:
+Error Level Analysis highlights compression differences across an image:
 1. Input image $I_{\text{orig}}$ is loaded and converted to RGB color space.
-2. A re-compressed surrogate $I_{\text{comp}}$ is generated in memory at JPEG quality $Q = 90\%$.
-3. The absolute pixel difference matrix $D$ is derived:
+2. A surrogate image $I_{\text{comp}}$ is re-compressed in memory at JPEG quality $Q = 90\%$.
+3. The absolute pixel difference matrix $D$ is computed:
    $$D(x, y) = |I_{\text{orig}}(x, y) - I_{\text{comp}}(x, y)|$$
-4. The mean deviation $\mu_D$ and maximum localized deviation $\Delta_{\max}$ are extracted. If $\Delta_{\max} > 45.0$, high compression discontinuity indicates localized splicing or face-swap blending.
+4. The mean deviation $\mu_D$ and maximum localized deviation $\Delta_{\max}$ are extracted. If $\Delta_{\max} > 45.0$, significant compression disparity indicates splicing or face-swap blending seams.
 5. In parallel, a Gaussian blur filter computes high-frequency noise variance:
    $$N_{\text{var}} = \frac{1}{|P|} \sum_{(x,y)} |I(x,y) - \text{Blur}(I(x,y))|$$
-   Unnaturally low $N_{\text{var}} < 2.2$ indicates synthetic diffusion smoothing typical of StyleGAN and Midjourney.
+   A low noise variance ($N_{\text{var}} < 2.2$) indicates synthetic generative smoothing characteristic of GAN and Diffusion models.
 
 ### 4.3 Module 3: Deepfake Video Temporal Keyframe Dynamics
-Video streams are decomposed into discrete keyframe sequences at regular $\Delta t = 1.5\text{s}$ intervals. Consecutive frames $F_t$ and $F_{t+1}$ are evaluated for:
-* **Facial Landmark Mesh Stability:** Tracking Euclidean distance shifts across 68 facial landmark coordinates.
-* **Inter-frame Illumination Consistency:** Detecting sudden global intensity jumps indicative of frame-by-frame generative synthesis.
-* **Temporal Motion Coherence:** Uncovering boundary pixel jitter along facial contours.
+Video streams are decomposed into keyframe sequences at regular $\Delta t = 1.5\text{s}$ intervals. Sequential frames $F_t$ and $F_{t+1}$ are evaluated for:
+* **Facial Landmark Mesh Stability:** Calculating Euclidean distance shifts across 68 facial landmark coordinates.
+* **Inter-frame Illumination Consistency:** Detecting sudden global intensity jumps caused by independent frame-by-frame synthesis.
+* **Temporal Motion Coherence:** Identifying boundary pixel jitter around facial contours.
 
 ### 4.4 Module 4: Knowledge-Based Claim Verification (RAG)
-For textual claims, the system applies semantic entity extraction and queries authenticated institutional databases:
+For textual claims, the system applies semantic entity extraction and cross-references verified institutional databases:
 * **Press Information Bureau (PIB) Fact Check**
-* **World Health Organization (WHO) Official Guidelines**
+* **World Health Organization (WHO) Official Bulletins**
 * **Reuters Fact Check Wire**
-* **NASA Scientific Records**
+* **NASA Scientific Database**
 
-Claims are classified into a triplet stance:
+Claims are categorized into a triplet stance:
 $$\text{Stance} \in \{\text{Supporting}, \text{Contradicting}, \text{Neutral}\}$$
-Claims contradicting authoritative records receive a *"Debunked / False"* classification, while claims without sufficient matches are marked *"Unverified / Lacks Evidence"*, avoiding fabricated certainty.
+Claims contradicting verified records receive a *"Debunked / False"* classification. Claims without corroborating records are designated *"Unverified / Lacks Evidence"*, maintaining academic rigor.
 
 ---
 
@@ -336,15 +348,13 @@ Claims contradicting authoritative records receive a *"Debunked / False"* classi
 
 ## **CHAPTER 5: SYSTEM DESIGN AND ARCHITECTURE**
 
-### 5.1 Architecture Overview
-TruthLens AI is designed following a decoupled, layered micro-services architecture:
-1. **Presentation Layer (Client):** React 18 single-page application powered by Vite, delivering sub-second hot module replacement, Tailwind CSS styling, responsive HUD scanners, and Explainable AI charts.
-2. **API Gateway & Routing Layer:** FastAPI RESTful endpoints with automatic OpenAPI/Swagger documentation, CORS middleware, and input validation schemas.
-3. **Core Forensic Service Layer:** Specialized standalone Python classes (`FakeNewsService`, `DeepfakeImageService`, `DeepfakeVideoService`, `FactVerificationService`).
-4. **Data Persistence Layer:** SQLAlchemy ORM interfacing with SQLite (for portable presentation) or PostgreSQL (for scalable production).
-5. **Reporting Service:** ReportLab PDF document compilation producing certified verification audit certificates.
+### 5.1 Overall System Architecture
+TruthLens AI is organized into a modular three-tier architecture:
+1. **Presentation Layer (Client):** React 18 single-page application built with Vite, utilizing Tailwind CSS for glassmorphic dark-theme styling, responsive HUD scanners, and telemetry dashboards.
+2. **Application & Service Layer (Server):** FastAPI asynchronous REST API handling request validation, routing, token authentication, and invoking core ML services.
+3. **Data Persistence Layer:** SQLAlchemy ORM interfacing with SQLite/PostgreSQL, managing relational schemas for users, scan telemetry, and model metrics.
 
-### 5.2 Data Flow Diagram (Level 0 and Level 1 DFD)
+### 5.2 Data Flow Diagrams (Level 0 and Level 1 DFD)
 
 ```
 LEVEL 0 DFD (Context Level):
@@ -382,6 +392,12 @@ LEVEL 1 DFD:
                        [JSON Telemetry & PDF File]
 ```
 
+### 5.3 Database Schema Design
+* **`User` Table:** `id`, `name`, `email`, `password_hash`, `role` (user/admin), `created_at`.
+* **`Scan` Table:** `id`, `user_id`, `content_type` (text/image/video/claim), `title`, `prediction`, `confidence`, `summary`, `created_at`.
+* **`AnalysisResult` Table:** `id`, `scan_id`, `metric_key`, `metric_value`, `indicator_text`.
+* **`VerificationSource` Table:** `id`, `scan_id`, `name`, `url`, `stance`, `relevance_score`, `snippet`.
+
 ---
 
 <div style="page-break-after: always;"></div>
@@ -389,32 +405,32 @@ LEVEL 1 DFD:
 ## **CHAPTER 6: IMPLEMENTATION DETAILS**
 
 ### 6.1 Backend Implementation (FastAPI & Python)
-The backend service is structured modularly:
-* **`app/main.py`:** Application entrypoint configuring CORS, route registration, and startup lifecycle hooks.
-* **`app/models/entities.py`:** Database models defining `User`, `Scan`, `AnalysisResult`, `VerificationSource`, and `ModelMetric`.
-* **`app/core/security.py`:** Password hashing (PBKDF2 HMAC-SHA256) and JSON Web Token (JWT) encoding/decoding.
-* **`app/services/`:** Core algorithmic implementations.
+* **`app/main.py`:** Configures FastAPI app, CORS middleware, API router prefixes, and static mount paths.
+* **`app/services/fake_news_service.py`:** TF-IDF feature extraction, sensationalism metrics, and punctuation scoring.
+* **`app/services/deepfake_image_service.py`:** Error Level Analysis, JPEG re-compression, and noise variance filters.
+* **`app/services/deepfake_video_service.py`:** Keyframe extraction (1.5s stride), landmark tracking, and suspicious frame timeline.
+* **`app/services/fact_verification_service.py`:** Entity extraction, repository cross-referencing, and stance classification.
+* **`app/services/pdf_service.py`:** ReportLab compilation generating verification audit certificates.
 
-#### API Route Inventory:
-| Endpoint | Method | Functionality |
+#### API Endpoints Summary:
+| Route | Method | Purpose |
 | :--- | :---: | :--- |
-| `/api/auth/login` | POST | Authenticates user and returns Bearer JWT token |
-| `/api/auth/register` | POST | Registers new user with role assignment |
-| `/api/detect/news` | POST | Evaluates headline and article text using NLP |
-| `/api/detect/image` | POST | Executes Error Level Analysis on uploaded image |
-| `/api/detect/video` | POST | Performs keyframe decomposition on uploaded video |
-| `/api/verify/claim` | POST | Executes RAG knowledge retrieval on submitted claim |
-| `/api/scans` | GET | Retrieves authenticated user scan history with filters |
-| `/api/reports/{id}` | GET | Downloads generated cryptographic PDF report |
-| `/api/admin/metrics` | GET | Returns confusion matrix, ROC-AUC, and system telemetry |
+| `/api/auth/login` | POST | Authenticates user credentials and issues JWT token |
+| `/api/auth/register` | POST | Registers a new user with role assignment |
+| `/api/detect/news` | POST | Analyzes headline and body text for misinformation |
+| `/api/detect/image` | POST | Performs ELA and noise analysis on uploaded photo |
+| `/api/detect/video` | POST | Decomposes video stream and checks temporal stability |
+| `/api/verify/claim` | POST | Cross-references claim with institutional repositories |
+| `/api/scans` | GET | Fetches authenticated user's scan history |
+| `/api/reports/{id}` | GET | Downloads certified PDF audit report |
+| `/api/admin/metrics` | GET | Returns confusion matrix, ROC-AUC, and model latency |
 
 ### 6.2 Frontend Implementation (React & Vite)
-The user interface utilizes a cyber-forensics dark aurora color palette (`#030611`, `#080D24`, neon cyan, electric indigo). Key components include:
-* **`Navbar.jsx`:** Responsive navigation with stacking context isolation, preventing sticky overlap issues.
-* **`BiometricHUDScanner.jsx`:** Interactive forensic simulator demonstrating ELA compression discrepancies and model telemetry in real-time.
-* **`ResultCard.jsx`:** Multi-tab verdict card featuring executive verdict, technical telemetry, explainability indicators, and PDF download triggers.
+* **`LandingPage.jsx`:** Features the TruthLens Multi-Modal Forensic Simulator, 4 detection capability cards, and pipeline architecture.
+* **`BiometricHUDScanner.jsx`:** Interactive forensic simulator demonstrating real-time ELA compression discrepancies.
+* **`ResultCard.jsx`:** Comprehensive scorecard displaying verdicts, confidence bars, explainable indicators, and PDF export buttons.
 * **`ForensicChatbot.jsx`:** Floating bottom-right assistant providing instant claim triage and forensic FAQs.
-* **`HowItWorksModal.jsx`:** Step-by-step user walkthrough in 100% professional English.
+* **`HowItWorksModal.jsx`:** Interactive step-by-step operational guide in professional English.
 
 ---
 
@@ -423,7 +439,7 @@ The user interface utilizes a cyber-forensics dark aurora color palette (`#03061
 ## **CHAPTER 7: RESULTS AND DISCUSSION**
 
 ### 7.1 Empirical Model Performance
-The individual forensic modules were evaluated across benchmark datasets (including FakeNewsNet, FaceForensics++, and verified government bulletins):
+The individual forensic modules were benchmarked across standard datasets (FakeNewsNet, FaceForensics++, and institutional bulletins):
 
 | Forensic Module | Precision | Recall | F1-Score | Avg Latency |
 | :--- | :---: | :---: | :---: | :---: |
@@ -438,16 +454,16 @@ The individual forensic modules were evaluated across benchmark datasets (includ
 ACTUAL AUTHENTIC         456 (TN)               44 (FP)
 ACTUAL DEEPFAKE           38 (FN)              462 (TP)
 ```
-* **Accuracy:** 91.8%
+* **Overall Accuracy:** 91.8%
 * **False Acceptance Rate (FAR):** 4.4%
 * **False Rejection Rate (FRR):** 3.8%
 
 ### 7.3 Live Deployment Verification
-TruthLens AI is fully operational across both local presentation and public cloud environments:
+TruthLens AI is operational and verified across local and cloud environments:
 * **Source Code Repository:** [https://github.com/Ayushgupta1715/truthlens-ai](https://github.com/Ayushgupta1715/truthlens-ai)
-* **Live Web Application:** [https://truthlens-ai-ayush.vercel.app](https://truthlens-ai-ayush.vercel.app)
-* **Localhost App URL:** `http://localhost:5173/`
-* **Localhost Swagger Docs:** `http://127.0.0.1:8000/docs`
+* **Live Production URL:** [https://truthlens-ai-ayush.vercel.app](https://truthlens-ai-ayush.vercel.app)
+* **Localhost Frontend:** `http://localhost:5173/`
+* **Localhost Backend API & Swagger:** `http://127.0.0.1:8000/docs`
 
 ---
 
@@ -456,18 +472,18 @@ TruthLens AI is fully operational across both local presentation and public clou
 ## **CHAPTER 8: CONCLUSION AND FUTURE SCOPE**
 
 ### 8.1 Summary of Contributions
-TruthLens AI successfully bridges the gap between unimodal, opaque media detection tools and practical, explainable digital verification. By unifying lexical NLP modeling, Error Level Analysis (ELA), sequential video keyframe analysis, and knowledge-based fact retrieval into a coherent platform, the system equips journalists, researchers, and citizens with accessible tools to combat digital deception. The platform achieves sub-second inference speeds, produces downloadable forensic PDF audit certificates, and adheres to strict academic integrity standards by eliminating fabricated certainty.
+TruthLens AI presents an explainable, multi-modal artificial intelligence system for verifying digital media. By unifying NLP lexical modeling, Error Level Analysis (ELA), sequential video keyframe analysis, and knowledge-based fact retrieval into a single platform, the system addresses the limitations of fragmented, black-box tools. The platform achieves sub-second inference speeds, produces downloadable forensic PDF audit certificates, and adheres to strict academic integrity standards.
 
-### 8.2 Limitations
-* **Heavy Video File Processing:** Extremely large video files (>100 MB) require significant server memory during dense keyframe sampling.
-* **Social Media Re-compression:** Images repeatedly compressed across messaging apps (such as WhatsApp) exhibit flattened ELA noise floors, necessitating multi-spectral frequency analysis.
-* **Dynamic Knowledge Base Latency:** Live external fact-checking APIs require network connectivity.
+### 8.2 Practical Limitations
+* **Large Video Files:** Videos exceeding 100 MB require substantial server memory for high-density keyframe sampling.
+* **Messaging App Re-compression:** Repeated re-compression across platforms like WhatsApp flattens ELA noise variance, requiring multi-spectral frequency analysis.
+* **Dynamic Knowledge Base Latency:** Real-time external fact-checking APIs depend on network connectivity.
 
 ### 8.3 Future Enhancements
-1. **Audio Deepfake & Voice Clone Detection:** Integrating spectral spectrogram analysis to identify synthetic text-to-speech audio streams.
-2. **Transformer-Based Visual Ensembles:** Incorporating Vision Transformers (ViT) and EfficientNet-B7 deep embeddings for micro-artifact classification.
-3. **Browser Extension:** Building a lightweight Chrome/Firefox browser extension for 1-click on-page fact checking.
-4. **Decentralized Cryptographic Ledger:** Anchoring verification certificate hashes on a public blockchain to guarantee non-repudiation.
+1. **Audio Deepfake & Voice Clone Detection:** Integrating spectral spectrogram analysis to identify synthetic audio streams.
+2. **Vision Transformer Ensembles:** Incorporating Vision Transformers (ViT) and EfficientNet-B7 deep embeddings for micro-artifact classification.
+3. **Browser Extension:** Developing a lightweight browser extension for 1-click on-page fact verification.
+4. **Blockchain Verification:** Recording cryptographic certificate hashes on a public ledger for non-repudiation.
 
 ---
 
@@ -515,7 +531,7 @@ def perform_error_level_analysis(image_path: str, quality: int = 90):
 ### Appendix B: User Interface Architecture
 * **Landing Page:** Interactive Forensic HUD Scanner, 4 Core Detection Cards, Multi-Stage Architecture.
 * **Workspace:** Dedicated consoles for Fake News, Image Detection, Video Detection, and Fact Checking.
-* **Audit PDF Certificate:** Crytographically timestamped verification summary with unique scan IDs.
+* **Audit PDF Certificate:** Cryptographically timestamped verification summary with unique scan IDs.
 
 ### Appendix C: Verified Live Links
 * **Live Website:** [https://truthlens-ai-ayush.vercel.app](https://truthlens-ai-ayush.vercel.app)
