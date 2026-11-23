@@ -4,7 +4,7 @@ from reportlab.lib import colors
 from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 from reportlab.lib.enums import TA_CENTER, TA_JUSTIFY, TA_LEFT, TA_RIGHT
 from reportlab.platypus import (
-    SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle, PageBreak, Image as RLImage, KeepTogether
+    SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle, PageBreak, Image as RLImage
 )
 from reportlab.pdfgen import canvas
 
@@ -165,6 +165,16 @@ def build_pdf(filename="TRUTHLENS_AI_MINI_PROJECT_REPORT_AYUSH_KUMAR_GUPTA.pdf")
         keepWithNext=True
     )
     
+    # Author signature right
+    style_ack_author = ParagraphStyle(
+        'AckAuthor',
+        fontName='Times-Bold',
+        fontSize=11.5,
+        leading=16,
+        alignment=TA_RIGHT,
+        spaceBefore=35
+    )
+    
     # Code Style
     style_code = ParagraphStyle(
         'CodeStyle',
@@ -180,46 +190,46 @@ def build_pdf(filename="TRUTHLENS_AI_MINI_PROJECT_REPORT_AYUSH_KUMAR_GUPTA.pdf")
     # =========================================================================
     # PAGE 1: COVER PAGE
     # =========================================================================
-    story.append(Spacer(1, 45))
-    story.append(Paragraph("<b>TRUTHLENS AI: AI-POWERED FAKE NEWS &<br/>DEEPFAKE DETECTION PLATFORM</b>", style_cover_title))
-    story.append(Spacer(1, 16))
+    story.append(Spacer(1, 35))
+    story.append(Paragraph("<b>TRUTHLENS AI: AI-POWERED FAKE NEWS &amp;<br/>DEEPFAKE DETECTION PLATFORM</b>", style_cover_title))
+    story.append(Spacer(1, 14))
     story.append(Paragraph("A Mini Project Report", style_cover_sub))
-    story.append(Spacer(1, 24))
+    story.append(Spacer(1, 22))
     
     story.append(Paragraph("Submitted in partial fulfilment of the requirements of the degree of", style_cover_sub))
-    story.append(Spacer(1, 6))
+    story.append(Spacer(1, 5))
     story.append(Paragraph("<b>Bachelor of Technology</b>", style_cover_bold))
     story.append(Spacer(1, 4))
     story.append(Paragraph("in", style_cover_sub))
     story.append(Spacer(1, 4))
-    story.append(Paragraph("<b>Computer Science & Engineering (Artificial Intelligence & Data Science)</b>", style_cover_bold))
-    story.append(Spacer(1, 22))
+    story.append(Paragraph("<b>Computer Science &amp; Engineering (Artificial Intelligence &amp; Data Science)</b>", style_cover_bold))
+    story.append(Spacer(1, 20))
     
     story.append(Paragraph("by", style_cover_sub))
-    story.append(Spacer(1, 12))
+    story.append(Spacer(1, 10))
     story.append(Paragraph("<b>Ayush Kumar Gupta</b>", ParagraphStyle('AuthorName', fontName='Times-Bold', fontSize=13, leading=17, alignment=TA_CENTER)))
     story.append(Spacer(1, 4))
     story.append(Paragraph("Roll No. 2308302009", style_cover_sub))
-    story.append(Spacer(1, 22))
+    story.append(Spacer(1, 20))
     
     story.append(Paragraph("<b>Supervisor(s):</b>", style_cover_bold))
     story.append(Spacer(1, 4))
     story.append(Paragraph("Mr. Digesh Pandey", style_cover_sub))
-    story.append(Spacer(1, 22))
+    story.append(Spacer(1, 20))
     
     # Official KMCLU Logo
     if os.path.exists("kmclu_official_logo.jpeg"):
         logo = RLImage("kmclu_official_logo.jpeg", width=75, height=80)
         logo.hAlign = 'CENTER'
         story.append(logo)
-        story.append(Spacer(1, 20))
+        story.append(Spacer(1, 18))
     else:
         story.append(Spacer(1, 40))
         
     story.append(Paragraph("<b>Department of Computer Science and Engineering</b>", style_cover_univ))
     story.append(Paragraph("<b>FACULTY OF ENGINEERING AND TECHNOLOGY</b>", style_cover_univ))
     story.append(Paragraph("<b>KHWAJA MOINUDDIN CHISHTI LANGUAGE UNIVERSITY</b>", ParagraphStyle('UnivMain', fontName='Times-Bold', fontSize=13, leading=18, alignment=TA_CENTER)))
-    story.append(Spacer(1, 10))
+    story.append(Spacer(1, 8))
     story.append(Paragraph("<b>2026</b>", style_cover_bold))
     
     story.append(PageBreak())
@@ -232,8 +242,8 @@ def build_pdf(filename="TRUTHLENS_AI_MINI_PROJECT_REPORT_AYUSH_KUMAR_GUPTA.pdf")
     story.append(Spacer(1, 15))
     
     cert_text = (
-        "This is to certify that the mini project report entitled <b>“TruthLens AI: AI-Powered Fake News & Deepfake "
-        "Detection Platform”</b> submitted by <b>Ayush Kumar Gupta</b> (Roll No. 2308302009) in partial fulfilment "
+        "This is to certify that the mini project report entitled &quot;<b>TruthLens AI: AI-Powered Fake News &amp; Deepfake "
+        "Detection Platform</b>&quot; submitted by <b>Ayush Kumar Gupta</b> (Roll No. 2308302009) in partial fulfilment "
         "of the requirements for the award of the degree of <b>Bachelor of Technology in Computer Science and Engineering "
         "(Artificial Intelligence and Data Science)</b>, Faculty of Engineering and Technology, Khwaja Moinuddin Chishti "
         "Language University, is a record of the bonafide work carried out by the student under my supervision and guidance. "
@@ -327,18 +337,10 @@ def build_pdf(filename="TRUTHLENS_AI_MINI_PROJECT_REPORT_AYUSH_KUMAR_GUPTA.pdf")
         "Python, FastAPI, React, PyTorch, scikit-learn, OpenCV, and Transformers, and my family and friends for their support."
     )
     story.append(Paragraph(ack_text, style_body_first))
-    story.append(Spacer(1, 40))
+    story.append(Spacer(1, 25))
     
-    ack_sign = [
-        ["", "<b>Ayush Kumar Gupta</b>"]
-    ]
-    t_ack = Table(ack_sign, colWidths=[250, 200])
-    t_ack.setStyle(TableStyle([
-        ('FONTNAME', (0,0), (-1,-1), 'Times-Bold'),
-        ('FONTSIZE', (0,0), (-1,-1), 11),
-        ('ALIGN', (1,0), (1,-1), 'RIGHT'),
-    ]))
-    story.append(t_ack)
+    # Pure Paragraph rendered on the right side - clean and robust without table tags
+    story.append(Paragraph("<b>Ayush Kumar Gupta</b>", style_ack_author))
     
     story.append(PageBreak())
 
@@ -426,7 +428,7 @@ def build_pdf(filename="TRUTHLENS_AI_MINI_PROJECT_REPORT_AYUSH_KUMAR_GUPTA.pdf")
         "and diffusion models to synthesize hyper-realistic deceptive media, ranging from non-existent political speeches "
         "to fraudulent financial announcements. Traditional digital forensics and manual journalism checks are unable to scale "
         "against millions of daily multimedia uploads. Fact-checkers and platform users repeatedly confront the critical question: "
-        "“Is this media item genuine, and what forensic artifacts substantiate its authenticity?”"
+        "&quot;Is this media item genuine, and what forensic artifacts substantiate its authenticity?&quot;"
     )
     story.append(Paragraph(intro_p1, style_body_first))
     
@@ -436,7 +438,7 @@ def build_pdf(filename="TRUTHLENS_AI_MINI_PROJECT_REPORT_AYUSH_KUMAR_GUPTA.pdf")
         "spatial pixel discontinuities, unnatural error-level recompression characteristics, and photo-response non-uniformity "
         "(PRNU) noise irregularities. TruthLens AI unifies these signals into an automated, explainable verification pipeline. "
         "Scope: the system accepts textual statements, articles, URLs, and image uploads, evaluates multimodal probabilities, "
-        "provides a 0–100 authenticity score with a Genuine/Suspicious/Manipulated rating, and generates spatial ELA heatmaps."
+        "provides a 0-100 authenticity score with a Genuine/Suspicious/Manipulated rating, and generates spatial ELA heatmaps."
     )
     story.append(Paragraph(intro_p2, style_body_first))
 
@@ -477,11 +479,11 @@ def build_pdf(filename="TRUTHLENS_AI_MINI_PROJECT_REPORT_AYUSH_KUMAR_GUPTA.pdf")
     # =========================================================================
     story.append(Paragraph("<b>4. OBJECTIVES</b>", style_h1))
     objs = [
-        "• To engineer a unified multi-modal AI architecture detecting both fake news text and synthetic deepfake media.",
-        "• To train and benchmark NLP classifiers (TF-IDF + Logistic Regression, RoBERTa) and Computer Vision models (MesoNet-4, EfficientNet-B4) using Accuracy, Precision, Recall, F1-score, and ROC-AUC.",
-        "• To integrate an Error Level Analysis (ELA) engine that reveals compression boundary disparities in suspicious imagery.",
-        "• To map multi-modal forensic vectors into a 0–100 authenticity score categorized as Genuine, Suspicious, or Manipulated.",
-        "• To construct an interactive, low-latency web platform and verify all forensic operations via automated unit tests."
+        "&bull;&nbsp; To engineer a unified multi-modal AI architecture detecting both fake news text and synthetic deepfake media.",
+        "&bull;&nbsp; To train and benchmark NLP classifiers (TF-IDF + Logistic Regression, RoBERTa) and Computer Vision models (MesoNet-4, EfficientNet-B4) using Accuracy, Precision, Recall, F1-score, and ROC-AUC.",
+        "&bull;&nbsp; To integrate an Error Level Analysis (ELA) engine that reveals compression boundary disparities in suspicious imagery.",
+        "&bull;&nbsp; To map multi-modal forensic vectors into a 0-100 authenticity score categorized as Genuine, Suspicious, or Manipulated.",
+        "&bull;&nbsp; To construct an interactive, low-latency web platform and verify all forensic operations via automated unit tests."
     ]
     for obj in objs:
         story.append(Paragraph(obj, style_body))
@@ -502,7 +504,7 @@ def build_pdf(filename="TRUTHLENS_AI_MINI_PROJECT_REPORT_AYUSH_KUMAR_GUPTA.pdf")
         ["Feature / Modality", "Description & Dimensionality", "Pipeline"],
         ["token_embeddings", "768-dim contextual RoBERTa hidden states", "RoBERTa-base"],
         ["stylometry_vector", "TF-IDF n-grams (1-3), sentiment, readability", "Logistic Regression"],
-        ["spatial_frame", "256×256 RGB normalized facial tensors", "EfficientNet-B4"],
+        ["spatial_frame", "256x256 RGB normalized facial tensors", "EfficientNet-B4"],
         ["meso_features", "Mesoscopic convolution activations across 4 blocks", "MesoNet-4"],
         ["ela_disparity", "JPEG compression differential matrix (|I - I_jpeg|)", "ELA Engine"],
         ["prnu_noise", "Wavelet-filtered sensor noise residual pattern", "PRNU Estimator"]
@@ -522,9 +524,9 @@ def build_pdf(filename="TRUTHLENS_AI_MINI_PROJECT_REPORT_AYUSH_KUMAR_GUPTA.pdf")
 
     meth_p2 = (
         "<b>Pre-processing and models.</b> Text content was sanitized, lower-cased, and tokenized with subword BPE. Imagery was "
-        "rescaled to 256×256 pixels, standardized against ImageNet channel statistics, and subjected to re-compression at 90% quality "
+        "rescaled to 256x256 pixels, standardized against ImageNet channel statistics, and subjected to re-compression at 90% quality "
         "factor for ELA extraction. Four core models were trained: TF-IDF + Logistic Regression, RoBERTa fine-tuned, MesoNet-4, "
-        "and EfficientNet-B4. The multi-modal score combines probability estimates: S = 100 × (0.4 P_text + 0.6 P_visual). "
+        "and EfficientNet-B4. The multi-modal score combines probability estimates: S = 100 x (0.4 P_text + 0.6 P_visual). "
         "Scores >= 75 denote Genuine, 45 to 74 denote Suspicious, and below 45 indicate Manipulated media."
     )
     story.append(Paragraph(meth_p2, style_body_first))
@@ -768,21 +770,21 @@ def build_pdf(filename="TRUTHLENS_AI_MINI_PROJECT_REPORT_AYUSH_KUMAR_GUPTA.pdf")
     story.append(Spacer(1, 10))
     
     refs = [
-        "[1] K. Shu, A. Sliva, S. Wang, J. Tang, and H. Liu, “Fake news detection on social media: A data mining perspective,” ACM SIGKDD Explorations Newsletter, vol. 19, no. 1, pp. 22–36, 2017.",
-        "[2] W. Y. Wang, “'Liar, liar pants on fire': A new benchmark dataset for fake news detection,” in Proc. 55th Annual Meeting of the Assoc. for Computational Linguistics (ACL), 2017, pp. 422–426.",
-        "[3] A. Rossler, D. Cozzolino, L. Luisa, J. Thies, M. Nießner, and J. Frank, “FaceForensics++: Learning to detect manipulated facial images,” in Proc. IEEE/CVF Int. Conf. on Computer Vision (ICCV), 2019, pp. 1–11.",
-        "[4] D. Afchar, V. Nozick, J. Yamagishi, and I. Echizen, “MesoNet: A compact facial video forgery detection network,” in Proc. IEEE Int. Workshop on Information Forensics and Security (WIFS), 2018, pp. 1–7.",
-        "[5] N. Krawetz, “A picture's worth: Digital image analysis and forensics,” Black Hat USA, vol. 2, pp. 1–31, 2007.",
-        "[6] L. Verdoliva, “Media forensics for modern personal digital media,” IEEE Transactions on Information Forensics and Security, vol. 15, pp. 3125–3142, 2020.",
-        "[7] Y. Liu et al., “RoBERTa: A robustly optimized BERT pretraining approach,” arXiv preprint arXiv:1907.11692, 2019.",
-        "[8] M. Tan and Q. V. Le, “EfficientNet: Rethinking model scaling for convolutional neural networks,” in Proc. 36th Int. Conf. on Machine Learning (ICML), 2019, pp. 6105–6114.",
+        "[1] K. Shu, A. Sliva, S. Wang, J. Tang, and H. Liu, &quot;Fake news detection on social media: A data mining perspective,&quot; ACM SIGKDD Explorations Newsletter, vol. 19, no. 1, pp. 22-36, 2017.",
+        "[2] W. Y. Wang, &quot;'Liar, liar pants on fire': A new benchmark dataset for fake news detection,&quot; in Proc. 55th Annual Meeting of the Assoc. for Computational Linguistics (ACL), 2017, pp. 422-426.",
+        "[3] A. Rossler, D. Cozzolino, L. Luisa, J. Thies, M. Niessner, and J. Frank, &quot;FaceForensics++: Learning to detect manipulated facial images,&quot; in Proc. IEEE/CVF Int. Conf. on Computer Vision (ICCV), 2019, pp. 1-11.",
+        "[4] D. Afchar, V. Nozick, J. Yamagishi, and I. Echizen, &quot;MesoNet: A compact facial video forgery detection network,&quot; in Proc. IEEE Int. Workshop on Information Forensics and Security (WIFS), 2018, pp. 1-7.",
+        "[5] N. Krawetz, &quot;A picture's worth: Digital image analysis and forensics,&quot; Black Hat USA, vol. 2, pp. 1-31, 2007.",
+        "[6] L. Verdoliva, &quot;Media forensics for modern personal digital media,&quot; IEEE Transactions on Information Forensics and Security, vol. 15, pp. 3125-3142, 2020.",
+        "[7] Y. Liu et al., &quot;RoBERTa: A robustly optimized BERT pretraining approach,&quot; arXiv preprint arXiv:1907.11692, 2019.",
+        "[8] M. Tan and Q. V. Le, &quot;EfficientNet: Rethinking model scaling for convolutional neural networks,&quot; in Proc. 36th Int. Conf. on Machine Learning (ICML), 2019, pp. 6105-6114.",
         "[9] T. Hastie, R. Tibshirani, and J. Friedman, The Elements of Statistical Learning, 2nd ed. New York, NY: Springer, 2009.",
-        "[10] F. Chollet, “Xception: Deep learning with depthwise separable convolutions,” in Proc. IEEE Conf. on Computer Vision and Pattern Recognition (CVPR), 2017, pp. 1251–1258.",
-        "[11] T. Fawcett, “An introduction to ROC analysis,” Pattern Recognition Letters, vol. 27, no. 8, pp. 861–874, 2006.",
-        "[12] F. Pedregosa et al., “Scikit-learn: Machine learning in Python,” Journal of Machine Learning Research, vol. 12, pp. 2825–2830, 2011.",
-        "[13] A. Paszke et al., “PyTorch: An imperative style, high-performance deep learning library,” in Advances in Neural Information Processing Systems (NeurIPS), 2019, pp. 8024–8035.",
-        "[14] G. Bradski, “The OpenCV library,” Dr. Dobb's Journal of Software Tools, 2000.",
-        "[15] S. Ramirez et al., “FastAPI: Modern, fast (high-performance), web framework for building APIs with Python,” 2020."
+        "[10] F. Chollet, &quot;Xception: Deep learning with depthwise separable convolutions,&quot; in Proc. IEEE Conf. on Computer Vision and Pattern Recognition (CVPR), 2017, pp. 1251-1258.",
+        "[11] T. Fawcett, &quot;An introduction to ROC analysis,&quot; Pattern Recognition Letters, vol. 27, no. 8, pp. 861-874, 2006.",
+        "[12] F. Pedregosa et al., &quot;Scikit-learn: Machine learning in Python,&quot; Journal of Machine Learning Research, vol. 12, pp. 2825-2830, 2011.",
+        "[13] A. Paszke et al., &quot;PyTorch: An imperative style, high-performance deep learning library,&quot; in Advances in Neural Information Processing Systems (NeurIPS), 2019, pp. 8024-8035.",
+        "[14] G. Bradski, &quot;The OpenCV library,&quot; Dr. Dobb's Journal of Software Tools, 2000.",
+        "[15] S. Ramirez et al., &quot;FastAPI: Modern, fast (high-performance), web framework for building APIs with Python,&quot; 2020."
     ]
     for r in refs:
         p_ref = Paragraph(r, ParagraphStyle('RefStyle', fontName='Times-Roman', fontSize=9, leading=13.5, spaceAfter=6, alignment=TA_JUSTIFY))
