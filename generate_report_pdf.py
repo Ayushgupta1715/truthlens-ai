@@ -4,7 +4,7 @@ from reportlab.lib import colors
 from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 from reportlab.lib.enums import TA_CENTER, TA_JUSTIFY, TA_LEFT, TA_RIGHT
 from reportlab.platypus import (
-    SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle, PageBreak, KeepTogether, HRFlowable
+    SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle, PageBreak, KeepTogether, HRFlowable, Image as RLImage
 )
 from reportlab.pdfgen import canvas
 
@@ -27,7 +27,7 @@ class NumberedCanvas(canvas.Canvas):
 
     def draw_page_decorations(self, page_count):
         self.saveState()
-        # Suppress headers/footers on the title page (page 1)
+        # Suppress headers/footers completely on the title page (page 1)
         if self._pageNumber > 1:
             self.setFont("Times-Roman", 9)
             self.setFillColor(colors.HexColor("#4B5563"))
@@ -38,11 +38,10 @@ class NumberedCanvas(canvas.Canvas):
             self.setLineWidth(0.5)
             self.line(72, 786, 523, 786)
             
-            # Running footer
+            # Running footer - ONLY page number centered, NO TruthLens AI at the bottom!
             self.line(72, 50, 523, 50)
             footer_text = f"Page {self._pageNumber} of {page_count}"
             self.drawCentredString(297.5, 38, footer_text)
-            self.drawRightString(523, 38, "TruthLens AI — Mini Project Report")
         self.restoreState()
 
 def build_pdf(filename="TRUTHLENS_AI_MINI_PROJECT_REPORT_AYUSH_KUMAR_GUPTA.pdf"):
@@ -58,36 +57,43 @@ def build_pdf(filename="TRUTHLENS_AI_MINI_PROJECT_REPORT_AYUSH_KUMAR_GUPTA.pdf")
     styles = getSampleStyleSheet()
 
     # Academic Typography Settings (Times New Roman, 1.5 line spacing)
-    # Title / Cover styles
+    style_cover_specimen = ParagraphStyle(
+        'CoverSpecimen',
+        fontName='Times-Bold',
+        fontSize=12,
+        leading=16,
+        alignment=TA_CENTER,
+        textColor=colors.HexColor("#1E293B")
+    )
     style_cover_title = ParagraphStyle(
         'CoverTitle',
         fontName='Times-Bold',
-        fontSize=18,
-        leading=24,
+        fontSize=16,
+        leading=22,
         alignment=TA_CENTER,
         textColor=colors.HexColor("#0F172A")
     )
     style_cover_sub = ParagraphStyle(
         'CoverSub',
         fontName='Times-Roman',
-        fontSize=12,
-        leading=18,
+        fontSize=11.5,
+        leading=17,
         alignment=TA_CENTER,
-        textColor=colors.HexColor("#334155")
+        textColor=colors.HexColor("#1E293B")
     )
     style_cover_author = ParagraphStyle(
         'CoverAuthor',
         fontName='Times-Bold',
-        fontSize=13,
-        leading=18,
+        fontSize=12.5,
+        leading=17,
         alignment=TA_CENTER,
         textColor=colors.HexColor("#0F172A")
     )
     style_cover_univ = ParagraphStyle(
         'CoverUniv',
         fontName='Times-Bold',
-        fontSize=12,
-        leading=17,
+        fontSize=11.5,
+        leading=16,
         alignment=TA_CENTER,
         textColor=colors.HexColor("#1E293B")
     )
@@ -96,8 +102,8 @@ def build_pdf(filename="TRUTHLENS_AI_MINI_PROJECT_REPORT_AYUSH_KUMAR_GUPTA.pdf")
     style_h1 = ParagraphStyle(
         'ChapH1',
         fontName='Times-Bold',
-        fontSize=15,
-        leading=21,
+        fontSize=14,
+        leading=20,
         textColor=colors.HexColor("#0F172A"),
         spaceBefore=12,
         spaceAfter=8,
@@ -106,15 +112,15 @@ def build_pdf(filename="TRUTHLENS_AI_MINI_PROJECT_REPORT_AYUSH_KUMAR_GUPTA.pdf")
     style_h2 = ParagraphStyle(
         'ChapH2',
         fontName='Times-Bold',
-        fontSize=13,
-        leading=18,
+        fontSize=12.5,
+        leading=17,
         textColor=colors.HexColor("#1E293B"),
         spaceBefore=10,
         spaceAfter=6,
         keepWithNext=True
     )
 
-    # Body Styles (Times New Roman 12, 1.5 Line Spacing -> leading 18)
+    # Body Styles (Times New Roman 12, 1.5 Line Spacing)
     style_body = ParagraphStyle(
         'Body12',
         fontName='Times-Roman',
@@ -134,71 +140,74 @@ def build_pdf(filename="TRUTHLENS_AI_MINI_PROJECT_REPORT_AYUSH_KUMAR_GUPTA.pdf")
     style_callout = ParagraphStyle(
         'Callout',
         fontName='Times-Italic',
-        fontSize=11,
-        leading=16,
+        fontSize=10.5,
+        leading=15,
         alignment=TA_CENTER,
         textColor=colors.HexColor("#1E3A8A"),
         spaceBefore=6,
         spaceAfter=8
     )
-    style_code = ParagraphStyle(
-        'CodeBlock',
-        fontName='Courier',
-        fontSize=9,
-        leading=12,
-        textColor=colors.HexColor("#0F172A"),
-        spaceBefore=4,
-        spaceAfter=6
-    )
 
     story = []
 
     # =========================================================================
-    # SPECIMEN 'A': TITLE SHEET
+    # SPECIMEN 'A': TITLE SHEET (Exact University Layout)
     # =========================================================================
-    story.append(Spacer(1, 10))
-    story.append(Paragraph("<b>A MINI PROJECT REPORT</b>", style_cover_sub))
-    story.append(Paragraph("<b>ON</b>", style_cover_sub))
-    story.append(Spacer(1, 12))
+    story.append(Paragraph("<b>GUIDELINES FOR PREPARATION OF MINI PROJECT REPORT</b>", style_cover_specimen))
+    story.append(Paragraph("<b>Specimen 'A': Title Sheet</b>", style_cover_specimen))
+    story.append(Spacer(1, 24))
+
+    # (Title)
     story.append(Paragraph("<b>TRUTHLENS AI: AI-POWERED FAKE NEWS & DEEPFAKE DETECTION PLATFORM</b>", style_cover_title))
-    story.append(Spacer(1, 14))
-    story.append(HRFlowable(width="60%", thickness=1.5, color=colors.HexColor("#0284C7"), spaceAfter=14))
+    story.append(Spacer(1, 24))
 
-    story.append(Paragraph("<i>Submitted in partial fulfilment of the requirements for the degree of</i>", style_cover_sub))
-    story.append(Spacer(1, 4))
-    story.append(Paragraph("<b>BACHELOR OF TECHNOLOGY</b>", ParagraphStyle('BTech', fontName='Times-Bold', fontSize=14, leading=19, alignment=TA_CENTER)))
-    story.append(Paragraph("<i>in</i>", style_cover_sub))
-    story.append(Spacer(1, 2))
-    story.append(Paragraph("<b>COMPUTER SCIENCE & ENGINEERING<br/>(ARTIFICIAL INTELLIGENCE & DATA SCIENCE)</b>", ParagraphStyle('CSE', fontName='Times-Bold', fontSize=13, leading=18, alignment=TA_CENTER)))
-    
-    story.append(Spacer(1, 16))
-    story.append(Paragraph("<b>Submitted by:</b>", style_cover_sub))
-    story.append(Spacer(1, 4))
+    # Submitted in partial fulfilment of the requirements of the degree of (Bachelor of Technology)
+    story.append(Paragraph("Submitted in partial fulfilment of the requirements of the degree of<br/><b>(Bachelor of Technology)</b><br/>in<br/><b>Computer Science & Engineering (Artificial Intelligence & Data Science)</b>", style_cover_sub))
+    story.append(Spacer(1, 18))
+
+    # by
+    story.append(Paragraph("by", style_cover_sub))
+    story.append(Spacer(1, 10))
+
+    # (Name of the Student) & (Roll No._______)
     story.append(Paragraph("<b>AYUSH KUMAR GUPTA</b>", style_cover_author))
-    story.append(Paragraph("<b>Roll No.:</b> 2308302009 &nbsp;&nbsp;|&nbsp;&nbsp; <b>Enrollment No.:</b> B-0312", style_cover_sub))
-    story.append(Paragraph("<b>Semester / Year:</b> 7th Semester / 4th Year", style_cover_sub))
+    story.append(Paragraph("<b>(Roll No. 2308302009)</b>", style_cover_sub))
+    story.append(Paragraph("(Enrollment No. B-0312)", style_cover_sub))
+    story.append(Spacer(1, 20))
 
-    story.append(Spacer(1, 14))
-    story.append(Paragraph("<b>Under the Supervision of:</b>", style_cover_sub))
+    # Supervisor (s):
+    story.append(Paragraph("<b>Supervisor (s):</b>", style_cover_sub))
     story.append(Spacer(1, 4))
     story.append(Paragraph("<b>MR. DIGESH PANDEY</b>", style_cover_author))
-    story.append(Paragraph("<i>Assistant Professor, Department of Computer Science & Engineering</i>", style_cover_sub))
+    story.append(Paragraph("Assistant Professor", style_cover_sub))
+    story.append(Spacer(1, 20))
 
-    story.append(Spacer(1, 22))
-    # University details
+    # Logo / Emblem
+    if os.path.exists("kmclu_logo.png"):
+        img = RLImage("kmclu_logo.png", width=80, height=80)
+        img.hAlign = 'CENTER'
+        story.append(img)
+        story.append(Spacer(1, 18))
+    else:
+        story.append(Spacer(1, 40))
+
+    # (Name of the Department)
     story.append(Paragraph("<b>DEPARTMENT OF COMPUTER SCIENCE AND ENGINEERING (AI & DS)</b>", style_cover_univ))
-    story.append(Paragraph("<b>FACULTY OF ENGINEERING AND TECHNOLOGY</b>", style_cover_univ))
-    story.append(Paragraph("<b>KHWAJA MOINUDDIN CHISHTI LANGUAGE UNIVERSITY</b>", ParagraphStyle('KMCLU', fontName='Times-Bold', fontSize=13, leading=18, alignment=TA_CENTER, textColor=colors.HexColor("#0F172A"))))
-    story.append(Paragraph("LUCKNOW, UTTAR PRADESH", style_cover_sub))
-    story.append(Spacer(1, 4))
-    story.append(Paragraph("<b>ACADEMIC YEAR: 2026–2027</b>", ParagraphStyle('Year', fontName='Times-Bold', fontSize=11, leading=15, alignment=TA_CENTER)))
+    # (FACULTY OF ENGINEERING AND TECHNOLOGY)
+    story.append(Paragraph("<b>(FACULTY OF ENGINEERING AND TECHNOLOGY)</b>", style_cover_univ))
+    # KHWAJA MOINUDDIN CHISHTI LANGUAGE UNIVERSITY
+    story.append(Paragraph("<b>KHWAJA MOINUDDIN CHISHTI LANGUAGE UNIVERSITY</b>", ParagraphStyle('KMCLU', fontName='Times-Bold', fontSize=12.5, leading=17, alignment=TA_CENTER, textColor=colors.HexColor("#0F172A"))))
+    story.append(Paragraph("LUCKNOW", style_cover_sub))
+    story.append(Spacer(1, 6))
+    # (Year)
+    story.append(Paragraph("<b>(2026-2027)</b>", ParagraphStyle('Year', fontName='Times-Bold', fontSize=11, leading=15, alignment=TA_CENTER)))
 
     story.append(PageBreak())
 
     # =========================================================================
     # SPECIMEN 'B': DECLARATION
     # =========================================================================
-    story.append(Paragraph("<b>SPECIMEN 'B' &mdash; DECLARATION</b>", style_h1))
+    story.append(Paragraph("<b>Specimen 'B' &ndash; Declaration</b>", style_h1))
     story.append(HRFlowable(width="100%", thickness=1, color=colors.HexColor("#CBD5E1"), spaceAfter=14))
     
     dec_text = (
@@ -210,16 +219,15 @@ def build_pdf(filename="TRUTHLENS_AI_MINI_PROJECT_REPORT_AYUSH_KUMAR_GUPTA.pdf")
         "has not been taken when needed."
     )
     story.append(Paragraph(dec_text, style_body))
-    story.append(Spacer(1, 40))
+    story.append(Spacer(1, 50))
 
     dec_table_data = [
         ["_______________________________________", ""],
-        ["(Signature of the Student)", ""],
+        ["(Signature)", ""],
         ["", ""],
-        ["Name of the Student:", "AYUSH KUMAR GUPTA"],
-        ["Roll No.:", "2308302009"],
-        ["Enrollment No.:", "B-0312"],
-        ["Programme:", "B.Tech &mdash; CSE (AI & DS), 7th Sem / 4th Year"],
+        ["(Name of the student):", "AYUSH KUMAR GUPTA"],
+        ["(Roll No.):", "2308302009 (Enrollment No.: B-0312)"],
+        ["Branch:", "B.Tech CSE (AI & DS) &mdash; 7th Sem / 4th Year"],
         ["Date:", "23rd November 2026"],
         ["Place:", "Lucknow, Uttar Pradesh"]
     ]
@@ -772,7 +780,7 @@ def build_pdf(filename="TRUTHLENS_AI_MINI_PROJECT_REPORT_AYUSH_KUMAR_GUPTA.pdf")
         style_body
     ))
 
-    # Build the document
+    # Build document
     doc.build(story, canvasmaker=NumberedCanvas)
     print(f"[SUCCESS] PDF Generated successfully: {filename}")
 
